@@ -1,0 +1,4 @@
+2020/03/18 14:59:04 [alert] 9256#1328: worker process 8492 exited with code C0000142
+2020/03/18 14:59:04 [alert] 9256#1328: could not respawn worker
+2020/03/19 14:23:00 [crit] 6316#8848: *18666 CreateFile() "E:/Web Development/FlyWheel/my-second-site/app/public/wp-content/themes/fictional-university-theme/https:/img4.goodfon.com/wallpaper/nbig/f/6a/vector-flower-seamless-pattern-background-elegant-tekstura-u.jpg" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: , request: "GET /wp-content/themes/fictional-university-theme/https://img4.goodfon.com/wallpaper/nbig/f/6a/vector-flower-seamless-pattern-background-elegant-tekstura-u.jpg HTTP/1.0", host: "my-second-site.local", referrer: "http://my-second-site.local/about-us/our-goals/"
+2020/03/19 15:00:37 [alert] 3836#6412: OpenEvent("ngx_master_228") failed (2: The system cannot find the file specified)
