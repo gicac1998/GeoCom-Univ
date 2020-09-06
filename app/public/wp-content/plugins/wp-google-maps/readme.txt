@@ -3,7 +3,7 @@ Contributors: WPGMaps, NickDuncan, CodeCabin_, DylanAuty, PerryRylance
 Donate link: https://www.wpgmaps.com
 Tags: google maps, maps, map, map markers, google map, google maps plugin, wp google maps, wp google map, map plugin, directions, google map plugin, map widget
 Requires at least: 3.5
-Tested up to: 5.3.2
+Tested up to: 5.4.1
 Requires PHP: 5.3
 Stable tag: trunk
 License: GPLv2
@@ -219,6 +219,24 @@ We no longer support timthumb and we have opted to remove it from WP Google Maps
 Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
 
 == Changelog ==
+
+= 8.0.23 :- 2020-05-06 =
+* Added experimental integrity check class (currently unused)
+* Added links to settings tabs in "No API key" message
+* Tested up to WordPress 5.4.1
+* Fixed IIS failing under certain conditions (+ now URL encoded for IIS servers in compressed path variables)
+* Fixed lowercase finnish.json filename breaking DataTables on Finnish installations
+
+= 8.0.22 :- 2020-04-07 =
+* Added tooltip to OpenLayer markers
+* Removed calls to wpgmza_enqueue_fontawesome (deprecated)
+* Added constants WPGMZA_PLUGIN_DIR_PATH and WPGMZA_PLUGIN_DIR_URL
+* Corrected typo in class.map.php (scoreLocator)
+* Added imageFolderURL to WPGMZA
+* Corrected paths in legacy circle and rectangle PHP files
+* Corrected Autoptimize typo
+* Debug OpenLayers no longer bundled or supported
+* Fixed "google is undefined" for users who had disabled legacy Pro, switched to OpenLayers and re-enabled legacy Pro
 
 = 8.0.21 :- 2020-03-19 :- Medium priority =
 * Developer Mode is now inaccessible
@@ -1455,6 +1473,22 @@ Please upgrade your version of WP Google Maps to version 6.0.27 as it includes m
 
 
 For more, please view the WP Google Maps site
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

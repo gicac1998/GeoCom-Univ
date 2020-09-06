@@ -252,6 +252,7 @@ class Plugin extends Factory
 		$result = apply_filters('wpgmza_plugin_get_localized_data', array(
 			'adminurl'				=> admin_url(),
 			'ajaxurl' 				=> admin_url('admin-ajax.php'),
+			'pluginDirURL'			=> plugin_dir_url(WPGMZA_FILE),
 			
 			'ajaxnonce'				=> wp_create_nonce('wpgmza_ajaxnonce'),
 			'legacyajaxnonce'		=> wp_create_nonce('wpgmza'),
@@ -281,7 +282,9 @@ class Plugin extends Factory
 			'markerXMLPathURL'		=> Map::getMarkerXMLPathURL(),
 
 			'is_admin'				=> (is_admin() ? 1 : 0),
-			'locale'				=> get_locale()
+			'locale'				=> get_locale(),
+			
+			'isServerIIS'			=> (isset($_SERVER["SERVER_SOFTWARE"]) && preg_match('/microsoft-iis/i', $_SERVER["SERVER_SOFTWARE"]))
 		));
 		
 		if($post)

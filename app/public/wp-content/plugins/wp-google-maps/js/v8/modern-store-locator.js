@@ -60,8 +60,16 @@ jQuery(function($) {
 		
 		$(addressInput).on("keydown keypress", function(event) {
 			
-			if(event.keyCode == 13 && self.searchButton.is(":visible"))
+			if(event.keyCode == 13)
+			{
+				// NB: Hacky workaround
 				self.searchButton.trigger("click");
+				
+				// NB: Legacy support
+				searchLocations(map_id);
+				
+				map.storeLocator.onSearch(event);
+			}
 			
 		});
 		
@@ -201,7 +209,16 @@ jQuery(function($) {
 		$(map.markerFilter).on("filteringcomplete", function(event) {
 
 			if(!this.map.hasVisibleMarkers())
-				alert(WPGMZA.localized_strings.zero_results);
+			{
+				if(this.map.settings.store_locator_not_found_message !=  WPGMZA.localized_strings.zero_results && this.map.settings.store_locator_not_found_message != "")
+				{
+					alert(this.map.settings.store_locator_not_found_message);
+
+				}
+				else{
+					alert(WPGMZA.localized_strings.zero_results);
+				}
+			}
 
 		});
 

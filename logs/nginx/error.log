@@ -2,3 +2,9 @@
 2020/03/18 14:59:04 [alert] 9256#1328: could not respawn worker
 2020/03/19 14:23:00 [crit] 6316#8848: *18666 CreateFile() "E:/Web Development/FlyWheel/my-second-site/app/public/wp-content/themes/fictional-university-theme/https:/img4.goodfon.com/wallpaper/nbig/f/6a/vector-flower-seamless-pattern-background-elegant-tekstura-u.jpg" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: , request: "GET /wp-content/themes/fictional-university-theme/https://img4.goodfon.com/wallpaper/nbig/f/6a/vector-flower-seamless-pattern-background-elegant-tekstura-u.jpg HTTP/1.0", host: "my-second-site.local", referrer: "http://my-second-site.local/about-us/our-goals/"
 2020/03/19 15:00:37 [alert] 3836#6412: OpenEvent("ngx_master_228") failed (2: The system cannot find the file specified)
+2020/04/01 11:51:17 [alert] 1980#7552: OpenEvent("ngx_master_8576") failed (2: The system cannot find the file specified)
+2020/05/04 13:15:43 [error] 4404#11012: *250 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "my-second-site.local", referrer: "http://my-second-site.local/wp-admin/plugins.php"
+2020/05/04 13:15:43 [alert] 6536#19508: OpenEvent("ngx_master_14836") failed (2: The system cannot find the file specified)
+2020/05/11 10:14:40 [alert] 5792#9912: OpenEvent("ngx_master_15456") failed (2: The system cannot find the file specified)
+2020/09/01 15:24:04 [alert] 12756#3208: OpenEvent("ngx_master_17028") failed (2: The system cannot find the file specified)
+2020/09/01 15:54:24 [alert] 9480#11632: OpenEvent("ngx_master_16684") failed (2: The system cannot find the file specified)
